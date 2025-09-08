@@ -60,7 +60,7 @@ function showWaitBox(target, waktuMundur) {
 
         waitBox.innerHTML = `Sabar yaa sayanggg, belum waktunyaa hehe <br>
                             tunggu ${hours} jam ${minutes} menit<br>
-                            Sekarang: ${hh}:${mm}:${ss}`;
+                            Sekarang masih jam: ${hh}:${mm}:${ss}`;
 
         if (diff <= waktuMundur) {
             clearInterval(timer);
