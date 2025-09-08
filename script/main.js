@@ -103,9 +103,8 @@ function startCountdown(target) {
         } else {
             const minutes = Math.floor(diff / 1000 / 60);
             const seconds = Math.floor((diff / 1000) % 60);
-            countdownBox.textContent = `Hitung mundur ke 00: 00[$ { minutes }: $ {
-                        seconds.toString().padStart(2, "
-                            0 ") }]`;
+
+            countdownBox.textContent = `Hitung mundur ke 00:00 [${minutes}:${seconds.toString().padStart(2, "0")}]`;
         }
     }, 1000);
 }
