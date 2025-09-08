@@ -12,14 +12,14 @@ window.addEventListener('load', () => {
 
     // kalau sudah jam 16:00 ke atas → cek menuju 00:00
     const target = new Date();
-    target.setHours(22, 0, 0, 0); // target jam 00:00 hari ini
+    target.setHours(0, 0, 0, 0); // target jam 00:00 hari ini
 
     if (now > target) {
         target.setDate(target.getDate() + 1); // kalau sudah lewat 00:00, target ke besok
     }
 
     const diff = target - now;
-    const waktuMundur = 120 * 60 * 1000;
+    const waktuMundur = 1 * 60 * 1000;
 
     if (diff > waktuMundur) {
         showWaitBox(target, waktuMundur);
