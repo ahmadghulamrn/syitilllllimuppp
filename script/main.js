@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     console.log(currentHour);
 
     // kalau masih jam 00:00 - 15:59 → langsung mulai animasi
-    if (currentHour < 19) {
+    if (currentHour < 20) {
         startSweetAlert();
         return;
     }
