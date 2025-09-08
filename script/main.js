@@ -58,7 +58,7 @@ function showWaitBox(target, waktuMundur) {
         const mm = now.getMinutes().toString().padStart(2, "0");
         const ss = now.getSeconds().toString().padStart(2, "0");
 
-        waitBox.innerHTML = `Tunggu sampai jam 00:00 <br>
+        waitBox.innerHTML = `Sabar yaa sayanggg, belum waktunyaa hehe <br>
                             tunggu ${hours} jam ${minutes} menit<br>
                             Sekarang: ${hh}:${mm}:${ss}`;
 
